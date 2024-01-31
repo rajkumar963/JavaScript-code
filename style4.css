@@ -1,0 +1,19 @@
+/* .red{
+    color: red;
+}
+.blue{
+    color: blue;
+} */
+
+div{
+    height: 150px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+body{
+     text-align: center; 
+  
+   justify-content: center;
+}
