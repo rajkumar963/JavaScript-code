@@ -10,4 +10,4 @@ let accountState;
 //prefer not use var because of issue of block scope and functional scope
 //
 
-console.log(accountId,name,password,accountCity,accountState);
+console.log([accountId,name,password,accountCity,accountState]);
