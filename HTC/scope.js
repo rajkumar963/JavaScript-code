@@ -3,19 +3,20 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-    // console.log("INNER: ", a);
+    c=100
+     // console.log("INNER: ", a);
     
 }
 
 
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
+//  console.log(a);
+//  console.log(b);
+//  console.log(c);
 
 
 function one(){
-    const username = "hitesh"
+    const username = "Raj"
 
     function two(){
         const website = "youtube"
@@ -23,11 +24,11 @@ function one(){
     }
     // console.log(website);
 
-     two()
+    // two()
 
 }
 
-// one()
+ //one()
 
 if (true) {
     const username = "hitesh"
@@ -38,7 +39,7 @@ if (true) {
     // console.log(website);
 }
 
-// console.log(username);
+ //console.log(username);
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
@@ -52,7 +53,7 @@ function addone(num){
 
 
 
-addTwo(5)
-const addTwo = function(num){
-    return num + 2
-}
+// addTwo(5)
+// const addTwo = function(num){
+//     return num + 2
+// }

@@ -1,4 +1,4 @@
-//console.log("hello");
+//console.log("hello");  ///formar declaration 
 const accountId=123456;
 let name="Raj";
 var password="123";
