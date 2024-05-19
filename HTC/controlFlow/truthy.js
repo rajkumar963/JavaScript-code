@@ -20,15 +20,21 @@ if (userEmail) {
 const emptyObj = {}
 
 if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
+    //console.log("Object is empty");
 }
+
+// console.log(false==0)
+// console.log(false=="")
+// console.log(false==false);
+
+
 
 // Nullish Coalescing Operator (??): null undefined
 
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
-// val1 = undefined ?? 15
+//val1 = undefined ?? 15
 val1 = null ?? 10 ?? 20
 
 
