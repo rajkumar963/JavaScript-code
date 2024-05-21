@@ -1,4 +1,4 @@
-const coding = ["js", "ruby", "java", "python", "cpp"]
+//const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){
 //     console.log(val);
@@ -12,11 +12,13 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+//  coding.forEach(printMe)
 
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);
 // } )
+
+
 
 const myCoding = [
     {
@@ -35,7 +37,7 @@ const myCoding = [
 
 myCoding.forEach( (item) => {
     
-    console.log(item.languageName);
+    //console.log(item.languageName);
 } )
 
 
@@ -57,15 +59,15 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //     return num > 4
 // } )
 
-// const newNums = []
+const newNums = []
 
-// myNums.forEach( (num) => {
-//     if (num > 4) {
-//         newNums.push(num)
-//     }
-// } )
+myNums.forEach( (num) => {
+    if (num > 4) {
+        newNums.push(num)
+    }
+} )
 
-// console.log(newNums);
+ //console.log(newNums);
 
 
 const books = [
@@ -85,17 +87,56 @@ const books = [
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
-  console.log(userBooks);
+  //console.log(userBooks);
 
   //#####################################################################################################
 
   const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNumers.map( (num) => { return num + 10})
+ const newNum = myNumers.map( (num) => { return num + 10})
 
-const newNums = myNumers
+ //console.log(newNum);
+
+const newNums1 = myNumers
                 .map((num) => num * 10 )
                 .map( (num) => num + 1)
                 .filter( (num) => num >= 40)
 
-console.log(newNums);
+//console.log(newNums1);
+
+//####################################################################################################
+
+const myNums1 = [1, 2, 3]
+
+//  const myTotal = myNums1.reduce(function (acc, currval) {
+//    console.log(`acc: ${acc} and currval: ${currval}`);
+//     return acc + currval
+// }, 0)
+
+const myTotal = myNums1.reduce( (acc, curr) => acc+curr, 0)
+
+//console.log(myTotal);
+
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+
+console.log(priceToPay);

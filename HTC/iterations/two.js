@@ -23,7 +23,7 @@ map.set('Fr', "France")
 map.set('IN', "India")
 
 
-// console.log(map);
+ //console.log(map);
 
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
@@ -58,12 +58,12 @@ for (const key in programming) {
     //console.log(programming[key]);
 }
 
-// const map = new Map()
+// const map1 = new Map()
 // map.set('IN', "India")
 // map.set('USA', "United States of America")
 // map.set('Fr', "France")
 // map.set('IN', "India")
 
-// for (const key in map) {
+// for (const key in map1) {
 //     console.log(key);
 // }
