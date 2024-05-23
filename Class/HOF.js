@@ -35,8 +35,36 @@
 // console.log(total)
 
 //filter
-const country=["india","usa","uk","australia","japan"]
+// const country=["india","usa","uk","australia","japan"]
 
-const filter=country.filter((n)=>n.length>4)
+// const filter=country.filter((n)=>n.length>4)
 
-console.log(filter)
+// console.log(filter)
+
+
+//reduce:--
+// const arr=[1,2,3,4,5,6,7,8,9,10]
+// const total=arr.reduce((acc,curr)=>{return acc+curr},10)
+// console.log(total)
+
+//sort
+// const months = ['March', 'Jan', 'Feb', 'Dec', 'April'];
+// months.sort();
+// months.reverse();
+// console.log(months);
+
+//forEach
+const arr=[1,2,3,4,5,6,7,8,9,10]
+arr.forEach((n)=>{
+    if(n%2==0){
+        console.log(n)
+    }
+})
+
+const month = ['March', 'Jan', 'Feb', 'Dec', 'April'];
+
+month.forEach((m) => {  
+    console.log(m);
+});
+
+   

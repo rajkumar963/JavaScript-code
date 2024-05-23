@@ -67,7 +67,7 @@ myNums.forEach( (num) => {
     }
 } )
 
- //console.log(newNums);
+ console.log(newNums);
 
 
 const books = [
