@@ -1,11 +1,11 @@
 .container {
-    width: 500px;
-    height: 480px;
+    width: 550px;
+    height: 650px;
    border: 2px solid black;
     margin: auto;
     margin-top: 10px;
     border-radius: 10px;
-    background-color: #797978;
+    background-color: #c0c09e;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -24,10 +24,12 @@
   }
   
   #results {
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 90px;
     margin-top: 20px;
-    color: rgb(241, 241, 241);
+    color: rgb(214, 20, 20);
+    font-weight: bold;
+    opacity: 1;
   }
   
   button {
