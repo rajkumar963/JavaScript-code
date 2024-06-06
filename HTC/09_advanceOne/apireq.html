@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: #212121; color: aliceblue;">
+    Value	&nbsp; &nbsp; State &nbsp;	Description <br>
+0	UNSENT &nbsp; &nbsp;Client has been created. open() not called yet. <br>
+1	OPENED	&nbsp; &nbsp; open() has been called. <br>
+2	HEADERS_RECEIVED	&nbsp; send() has been called, and headers and status are available. <br>
+3	LOADING &nbsp; &nbsp;	Downloading; responseText holds partial data. <br>
+4	DONE &nbsp; &nbsp;  The operation is complete. <br>
+    
+
+<script>
+    const req = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', req);
+
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data);
+            console.log(data.avatar_url); // Corrected property name
+        }
+    };
+
+    xhr.send();
+</script>
+
+</body>
+
+</html>
