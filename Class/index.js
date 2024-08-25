@@ -14,3 +14,10 @@
 
 
 //Datatype 
+
+var x=100; 
+ function print() {
+    console.log(x);
+    var x=200; 
+} 
+ print()
