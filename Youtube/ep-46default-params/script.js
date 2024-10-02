@@ -6,3 +6,7 @@ function multiply(a, b = 1) {
     return Math.floor(Math.random() * numberOfSides) + 1
   }
   
+
+  // function mul(a,b){
+  //   return a*b
+  // }

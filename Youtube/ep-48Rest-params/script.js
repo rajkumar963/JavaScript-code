@@ -22,4 +22,10 @@ function add(...nums) {
   return nums.reduce((acc, curr) => acc + curr)
 }
 
-const result = add(...nums1)
+ const result = add(...nums1)
+
+// check console
+// add(8,90)
+// 8 90 undefined
+//  nums: []
+// 0

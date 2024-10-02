@@ -23,11 +23,11 @@ const user = {
 
 const { name, age } = user
 
-// const { name: username, age: userAge } = user
+ const { name: username, age: userAge } = user
 
-// const { address: {city} } = user
-// const { address } = user
-// const { city } = address
+//const { address: {city} } = user
+const { address } = user
+const { city } = address
 
 function intro({age, name}) {
   console.log(age, name);
