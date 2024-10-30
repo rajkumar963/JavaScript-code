@@ -15,7 +15,7 @@ h1.style.backgroundColor = 'skyblue'
 
 
 for (const link of allLinks) {
-    // link.style.color = 'teal'
+   //link.style.color = 'teal'
     // link.style.textDecorationLine = 'none'
     // link.style.fontWeight = '700'
     // link.style.fontFamily = 'cursive'

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appendChild & append</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: cursive;">
+    <h1>appendChild & append</h1>
+    <div class="container">
+      <div class="card">1</div>
+      <!-- .card*100{$} -->
+      
+    </div>
+
+    <h1>Differance b/w append  and appenChild </h1>
+    <span>
+      <b>Data Types Supported:</b><br>
+        append(): Can append both DOM nodes and text. <br>
+        appendChild(): Can only append DOM nodes.
+       <br><br>
+      <b>Number of Arguments:</b><br>
+        append(): Can append multiple items at once. <br>
+        appendChild(): Can append only one item at a time.
+        <br><br>
+     <b>Browser Support:</b><br>
+        append(): Supported in modern browsers.<br>
+        appendChild(): Supported in all browsers.
+    </span>
+
+    <p>1. Element.append() allows you to also append strings, whereas Node.appendChild() only accepts Node objects.</p>
+    <p>2. Element.append() has no return value, whereas Node.appendChild() returns the appended Node object.</p>
+    <p>3. Element.append() allows you to also append strings, whereas Node.appendChild() only accepts Node objects.</p>
+  </body>
+</html> 
