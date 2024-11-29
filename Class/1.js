@@ -163,3 +163,11 @@ console.log(t.split(" "));
 
 let num=20;
 num===20 ? console.log("true") : console.log("false")
+
+
+ function1 = () => {
+    var name = "Rajkumar";
+    console.log(name);
+}
+
+//console.log(name);
