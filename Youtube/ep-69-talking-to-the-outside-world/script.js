@@ -8,3 +8,10 @@ button.addEventListener('click', () => {
       image.src = json.message
     })
 })
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => {
+//         console.log('This is the response')
+//         console.log(json)
+//       })
