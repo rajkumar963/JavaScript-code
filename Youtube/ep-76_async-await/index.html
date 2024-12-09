@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async / Await</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1>Async / Await</h1>
+    <p>async and await are keywords in JavaScript that simplify working with asynchronous code, especially when dealing with Promises. They make asynchronous code look and behave more like synchronous code, improving readability and making it easier to debug.</p>
+    <p><b>1.async Keyword</b></p>
+    <p>The async keyword is used to define a function as asynchronous. <br>
+        An async function always returns a Promise, even if it doesn't explicitly return one. <br>
+        The returned Promise resolves with the value returned by the async function or rejects if an error is thrown.</p>
+
+    <p><b>2. await Keyword</b></p>
+    <p>The await keyword is used inside an async function to pause execution until a Promise is resolved or rejected. <br>
+        It allows you to write asynchronous code in a synchronous style. <br>
+        Execution within the function resumes only after the awaited Promise settles (resolves or rejects).</p>
+
+    <h1>Key Benefits of async and await</h1>
+    <p><b>#Improved readability:</b> Makes asynchronous code look like synchronous code. <br>
+        <b>#Error handling:</b> Use try...catch blocks for cleaner error management. <br>
+        <b>#Sequential operations:</b> Easier to write code that performs actions one after another.</p>
+  </body>
+</html>
