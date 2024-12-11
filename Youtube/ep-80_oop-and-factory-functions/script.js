@@ -11,9 +11,9 @@ function createUser(firstName, lastName, age) {
   }
   
   
-  const user1 = createUser('Aman', 'Mishra', 32)
-  const user2 = createUser('Anurag', 'Singh', 72)
+  // const user1 = createUser('Aman', 'Mishra', 32)
+  // const user2 = createUser('Raj', 'kumar', 72)
   
-  const arr1 = [1,2]
-  const arr2 = [3, 4]
+  // const arr1 = [1,2]
+  // const arr2 = [3, 4]
   
