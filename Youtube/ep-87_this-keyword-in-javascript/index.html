@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>'this' keyword in JavaScript</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1>'this' keyword in JavaScript</h1>
+    <p>In JavaScript, the this keyword is a special identifier that refers to the execution context in which a function is called. Its value depends on how and where the function is invoked.</p>
+    <h2>Rules for this in JavaScript</h2>
+    <p><b>Global Context (Outside Any Function):</b>
+      1.In a browser: this refers to the global window object. <br>
+      2.In Node.js: this refers to the global object (global), but in ES modules, it's undefined.</p>
+    <p><b>Inside an Object Method:</b>
+      this refers to the object the method is called on.</p>
+    <p><b>Inside a Regular Function: </b>
+      In non-strict mode, this refers to the global object (window in browsers).
+      In strict mode, this is undefined</p>
+    <p><b>Arrow Functions:</b>
+      Arrow functions don’t have their own this. They inherit this from their lexical scope (where they are defined).</p>
+    <p>Use call, apply, or bind to explicitly control this.</p>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototypal Inheritance Using Extends and Super Keyword</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1>Prototypal Inheritance Using Extends and Super Keyword</h1>
+    <p>Prototypes provide a powerful and efficient way to share methods and properties in JavaScript, forming the foundation for object-oriented programming in the language. Modern ES6 class syntax simplifies working with prototypes while maintaining the same behavior.</p>
+    <p>
+       <b>What is Prototype?</b>
+      A mechanism for object inheritance in JavaScript.
+      Every function has a prototype property that allows methods and properties to be shared across all instances created by that function. <br>
+     <b> Prototype Chain:</b>
+      When accessing a property or method, JavaScript checks the object itself first and then its prototype chain until Object.prototype or null. <br>
+      <b>Benefits of Prototypes:</b>
+      1. Memory Efficiency:-- Methods and properties on the prototype are shared across all instances, avoiding duplication.
+      2. Dynamic Updates:-- Changes to the prototype are immediately reflected in all instances. <br>
+  
+    <b>  Modern JavaScript (ES6 Classes):</b>
+      
+      Classes in JavaScript are syntactic sugar for working with prototypes.
+      Methods in classes are still stored in the prototype. <br>
+     <b> Key Relationships:</b>
+      object.__proto__ points to the constructor's prototype.
+      Object.prototype is the root of the prototype chain.
+      </p>
+  </body>
+</html>
