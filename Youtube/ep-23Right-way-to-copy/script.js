@@ -30,3 +30,4 @@ const user1 = {
 // const user2 = {}
 // Object.assign(user2, user1)
 const user2 = { ...user1 }
+console.log(user2)

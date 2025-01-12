@@ -1,0 +1,21 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+form{
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+.control{
+ display: flex;
+ flex-direction: column;
+}
+
+.control label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+}

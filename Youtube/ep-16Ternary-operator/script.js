@@ -10,3 +10,8 @@ const username = 5 > 2 ? 'Anurag' : 'Procodrr'
 const result = null ? 'Anurag' : '' ? '12' : 0
 
 console.log(result)
+
+
+a=32;
+const res=a>=33?"pass":"fail";
+console.log(res);
