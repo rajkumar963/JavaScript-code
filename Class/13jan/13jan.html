@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stop Event Propagation Demo</title>
+<style type="text/css">
+    div, p, a{
+        padding: 15px 30px;
+        display: block;
+        border: 2px solid #000;
+        background: #f0f0f0;
+        font-weight: 600;
+        height: 300px;
+    }
+    p{
+        height: 200px;
+    }
+    #link{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: aqua;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+    <div id="parent" style="background-color: rgb(15, 182, 238);">Parent Div
+        <p id="child" style="background-color: rgb(17, 232, 17);">Child P
+            <a href="#" id="link">Click Me</a>
+        </p>
+    </div>
+<script>
+    function showAlert(event) {
+        alert("You clicked: " + this.tagName);
+        event.stopPropagation();
+    }
+    document.getElementById("parent").addEventListener("click", showAlert);
+    document.getElementById("child").addEventListener("click", showAlert);
+    document.getElementById("link").addEventListener("click", showAlert);
+</script>
+</body>
+</html>
