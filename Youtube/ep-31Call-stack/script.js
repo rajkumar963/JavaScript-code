@@ -1,4 +1,4 @@
-debugger
+//debugger
 
 // sayHi()
 
@@ -20,11 +20,33 @@ debugger
 //     console.log('Kuchh bhi');
 // }
 
-function introduceMe() {
-    console.log('Hi, My name is Anurag.');
-    introduceMe()
+// function introduceMe() {
+//     console.log('Hi, My name is Anurag.');
+//     //introduceMe()
+// }
+
+// introduceMe()
+
+// console.log('Program Ended');
+
+
+
+
+function sayHi(a,b) {
+    add( a, b)
+    console.log('Hi')
 }
 
-introduceMe()
+function add(x, y) {
+    Mul(x, y)
+    console.log(x + y)
+    return x + y
+}
 
-console.log('Program Ended');
+function Mul(x, y) {
+    console.log(x * y)
+    return x * y
+}
+
+
+sayHi(4,5)

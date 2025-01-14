@@ -23,11 +23,11 @@
 
 // let intervalId = setInterval(() => {
 //     console.log("This will stop after 3 seconds");
-// }, 1000);
+// }, 3000);
 
 // setTimeout(() => {
 //     clearInterval(intervalId);  // Stops the interval after 3 seconds
-// }, 3000);
+// }, 9000);
 
 
 
