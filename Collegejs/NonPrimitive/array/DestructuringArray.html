@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let user={
+            name1:'Dhoni',
+            age:55,
+            gender:'M',
+            email:'dhoni@gmail.com'
+        }
+        console.log('using destruturing')
+        const{name1,age}=user;
+        console.log(name1,age)
+
+        //using own key for object destructuring
+        let user1={
+            name2:'sachin',
+            age1:60,
+            salary:200000,
+            gender:'M',
+            email:'sachin@gmail.com'
+        }
+
+        const{name2,age1,salary='not disclosed',gender,email}=user1
+        console.log(name1,age,salary,gender,email)
+
+
+        let a = 10;
+        let b = 20;
+        console.log('before swape')
+       console.log(' a =',a, 'b=',b)
+
+       [b,a]=[a,b]
+       console.log('after swape')
+       console.log(' a =',a, 'b=',b)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // try{
+        //     let a=10;
+        //     let b=a+undefinedVariable; // This will throw an error
+        //     console.log(b);
+        // }catch(error){
+        //     console.log("An error occurred:", error);
+        //     console.log("An error occurred:", error.message);
+        //     console.log("An error occurred:", error.name);
+        //     console.log("An error occurred:", error.stack);
+        // }
+
+        // try{
+        //     let json='{name:"John", "age":30};
+        //     let user=JSON.parse(json); // This will work fine
+        //     console.log(user.name); // Output: John
+        // }catch(error){
+        //     console.log("An error occurred:", error);
+        //     console.log("An error occurred:", error.message);
+        //     console.log("An error occurred:", error.name);
+        //     console.log("An error occurred:", error.stack);
+        // }finally{
+        //     console.log("This block always executes, regardless of an error.");
+        // }
+
+
+        // function divide(a, b) {
+        //     try {
+        //         if (b === 0) {
+        //             throw new Error("Division by zero is not allowed.");
+        //         }
+        //         return a / b;
+        //     } catch (error) {
+        //         console.error("An error occurred:", error.message);
+        //     } finally {
+        //         console.log("Execution completed.");
+        //     }
+        // }
+
+
+        // class dividebyZeroError extends Error {
+        //     constructor(message) {
+        //         super(message);
+        //     }
+        // }
+        // function divide(a,b){
+        //     if(b===0){
+        //         throw new dividebyZeroError("Division by zero is not allowed.");
+        //     }
+        //     console.log("result is", a / b);
+        // }
+
+        // try{
+        //     divide(10, 0); // This will throw an error
+        // } catch (error) {
+        //     if (error instanceof dividebyZeroError) {
+        //         console.error("Custom Error:", error.message);
+        //     } else {
+        //         console.error("An unexpected error occurred:", error);
+        //     }
+        // } finally {
+        //     console.log("Execution completed.");
+        // }
+
+        // 10/25 create a custom error class
+        // class CustomError extends Error {
+        //     constructor(message) {
+        //         super(message);
+        //         this.name = "CustomError";
+        //     }
+        // }
+        // function riskyFunction() {
+        //     throw new CustomError("numrator value is greater than denominator");
+        // }
+        // try {
+        //     riskyFunction();
+        // } catch (error) {
+        //     if (error instanceof CustomError) {
+        //         console.error("Custom Error:", error.message);
+        //     } else {
+        //         console.error("An unexpected error occurred:", error);
+        //     }
+        // } finally {
+        //     console.log("Execution completed.");
+        // }
+
+        try{
+            console.log("connection to database")
+        }catch(error){
+           if(error instanceof TypeError){
+                console.error("Type Error:", error.message);//handling TypeError
+            }
+            if(error instanceof ReferenceError){
+                console.error("Reference Error:", error.message);//handling ReferenceError
+            }
+            if(error instanceof SyntaxError){
+                console.error("Syntax Error:", error.message);//handling SyntaxError
+            }
+        }finally{
+            console.log("This block always executes, regardless of an error.");
+        }
+
+        //All exception in js are uncheched ecxeptions, this exception not checked by compiler During memory allocation phase
+    </script>
+</body>
+</html>

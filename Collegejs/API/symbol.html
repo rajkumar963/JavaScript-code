@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       var product={
+            name: "Laptop",
+            price: 50000,
+            brand: "Dell",
+            features: {
+                processor: "Intel i7",
+                ram: "16GB",
+                storage: "512GB SSD"
+            },
+            inStock: true,
+            ratings: [4.5, 4.7, 4.8, 4.6],
+            reviews: [
+                { user: "Alice", comment: "Great performance!" },
+                { user: "Bob", comment: "Value for money." }
+            ]
+        };
+
+        console.log(product);
+        for(const key in object.product) {
+            if (product.hasOwnProperty(key)) {
+                console.log(`${key}: ${product[key]}`);
+            }
+        }
+       
+        
+        
+    </script>
+</body>
+</html>
