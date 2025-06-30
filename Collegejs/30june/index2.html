@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+
+    <script>
+        //Rules of rest operators:--
+        //1. Every function can have only one rest operator.  
+         //  function(...args, ...rest)  wrong syntax
+        //2. in a function we can keep normal parameters before the rest operator.
+        //  function(a, b, ...rest)  correct syntax
+        //3. Rest operator should be the last parameter in a function.
+        //  function(...rest, a)  wrong syntax  
+        //4. Rest operator can be used in destructuring assignment.
+
+        function printData(id,...otherData){
+            console.log(id);
+            const {name, gendre,ismarried,salary='not disclosed'} = otherData;
+            console.log(otherData);
+            console.log(salary);
+        }
+
+        let userData={id:10, name: "John", gendre:"male", ismarried:true, salary:50000};
+        printData({...userData})
+        let updatedUserData={name: "Doe", gmail:"doe@example.com"}; 
+        printData({...updatedUserData})
+
+        //difference between rest and spread operator
+        //Rest operator is used to collect the remaining parameters in a function into an array.and use to destructuring.
+        //Spread operator is used to spread the elements of an array or object into individual elements.
+        //Rest operator is used in function parameters, while spread operator is used in function calls or array literals.
+    </script>
+</body>
+</html>

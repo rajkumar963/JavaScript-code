@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name: "John",
+            age: 30,
+            city: "New York",
+            address:{
+                city: "New York",
+                state: "NY",
+            }
+        }
+//shallow copy:- if we change the value of the nested object, it will also change in the original object
+        let cloneobj={...obj}
+
+        cloneobj.name="Doe";
+        cloneobj.address.city="Los Angeles";
+
+        console.log(obj); // { name: 'John', age: 30, city: 'New York', address: { city: 'Los Angeles', state: 'NY' } }
+        console.log(cloneobj); // { name: 'Doe', age: 30, city: 'New York', address: { city: 'Los Angeles', state: 'NY' } } 
+
+
+//deep copy:- if we change the value of the nested object, it will not change in the original object
+        let deepcloneobj=structuredClone(obj);
+        deepcloneobj.name="Smith";
+        deepcloneobj.address.city="Chicago";
+
+        console.log(obj); // { name: 'John', age: 30, city: 'New York', address: { city: 'Los Angeles', state: 'NY' } }
+        console.log(deepcloneobj); // { name: 'Smith', age: 30, city: 'New York', address: { city: 'Chicago', state: 'NY' } }
+
+        // Note: structuredClone is not supported in all browsers, so you may need to use a polyfill or a library like lodash for deep cloning in production code.
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function generators</title>
+</head>
+<body>
+
+    <script>
+        // Function generator example
+        function* numberGenerator() {
+           yield "sachin";
+           yield "sachin2";
+           yield "sachin3";
+           yield "Rajesh";
+           yield 2;
+        }
+
+        const gen = numberGenerator();
+        console.log(gen.next().value); // { value: "sachin" }
+        console.log(gen.next()); // { value: "sachin", done: false }
+        console.log(gen.next()); // { value: "sachin2", done: false }
+        console.log(gen.next()); // { value: "sachin3", done: false }
+        console.log(gen.next()); // { value: "Rajesh", done: false }
+        console.log(gen.next()); // { value: 2, done: false }
+
+        console.log(gen.next()); // { value: undefined, done: true }  
+        
+        let res=gen.next();
+        while(!res.done){
+            console.log(res.value);
+            res=gen.next();
+        }
+    </script>
+</body>
+</html>
