@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Operators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        img{
+            max-width: 200px;
+            height:200px;
+        }
+        .card-footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #6c757d;
+            background-color: #f8f9fa;
+        }
+        .card-footer button {
+        background-color: #007bff;
+            text-decoration: none;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .price {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #e1dcdc;
+            align-items: right;
+        }
+        .price span{
+            margin: 15px;
+            font-size: 1em;
+            font-weight: bold;  
+            border:1px solid #171718;
+            padding: 5px 10px;
+            border-radius: 2px;
+            background-color: #fa0404;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            
+        </div>
+        <div class="card-body">
+            <div class="price"></div>
+            <div class="image">
+                <img src="" alt="image" class="card-img-top">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button>Prev</button>
+            <button>Next</button>
+        </div>
+    </div>
+
+    <script>
+    let id = 1;
+    const maxProducts = 20; // Fake Store API has 20 products
+
+    async function loadproducts() {
+        try {
+            let url = `https://fakestoreapi.com/products/${id}`;
+            let response = await fetch(url);
+            let data = await response.json();
+            document.querySelector(".card-header").innerHTML = `<h5 class="card-title">${data.title}</h5>`;
+            document.querySelector(".price").innerHTML = `<span>Price: $${data.price}</span>`;
+            document.querySelector(".image img").src = data.image;
+            document.querySelector(".image img").alt = data.title;
+        } catch (error) {
+            console.error("Error loading product:", error);
+            document.querySelector(".price").innerHTML = "";
+            document.querySelector(".image img").src = "";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadproducts();
+
+        const prevBtn = document.querySelector(".card-footer button:first-child");
+        const nextBtn = document.querySelector(".card-footer button:last-child");
+
+        prevBtn.addEventListener("click", () => {
+            if (id > 1) {
+                id--;
+                loadproducts();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            if (id < maxProducts) {
+                id++;
+                loadproducts();
+            }
+        });
+    });
+</script> 
+    
+</body>
+</html>
