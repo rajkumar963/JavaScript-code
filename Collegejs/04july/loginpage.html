@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Apply general styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Center the form and give it styling */
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* Heading style */
+h1 {
+    
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label styles */
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #5b9bd5;
+}
+
+/* Button styles */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a8ac2;
+}
+
+/* Login message style */
+#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+    color: red;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>Login</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+
+        <h3 id="loginMessage"></h3>
+    </form>
+    <script>
+        async function userdata(username, password) {
+            const response = await fetch('userdata.json');
+            const users = await response.json();
+            
+            let userFound = false;
+
+            userFound = users.some(u => u.username === username && u.password === password);
+           
+
+            if (!userFound) {
+               document.getElementById('loginMessage').innerHTML = '<h2 style="color: red;">Invalid username or password.</h2>';
+            } else {
+                document.write('<h2 style="color: green;">Login successful!</h2>');
+            }
+        }
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            userdata(username, password);
+        });
+
+    </script>
+</body>
+</html>

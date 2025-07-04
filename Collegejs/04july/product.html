@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol></ol>
+
+    <script>
+        async function products(){
+            const response = await fetch('product.json');
+            const data = await response.json();
+            const ol = document.querySelector('ol');
+            data.forEach(category => {
+                category.items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price}`;
+                    ol.appendChild(li);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

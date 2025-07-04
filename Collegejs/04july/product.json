@@ -1,0 +1,48 @@
+[
+  {
+    "category": "Electronics",
+    "items": [
+      {
+        "id": 1,
+        "name": "Smartphone",
+        "price": 699,
+        "description": "Latest model smartphone with advanced features."
+      },
+      {
+        "id": 2,
+        "name": "Laptop",
+        "price": 999,
+        "description": "High-performance laptop for all your computing needs."
+      },
+      {
+        "id": 3,
+        "name": "Headphones",
+        "price": 199,
+        "description": "Noise-cancelling headphones for immersive sound."
+      }
+    ]
+  },
+  {
+    "category": "Home Appliances",
+    "items": [
+      {
+        "id": 4,
+        "name": "Refrigerator",
+        "price": 1200,
+        "description": "Energy-efficient refrigerator with spacious storage."
+      },
+      {
+        "id": 5,
+        "name": "Washing Machine",
+        "price": 800,
+        "description": "Front-loading washing machine with multiple wash programs."
+      },
+      {
+        "id": 6,
+        "name": "Microwave Oven",
+        "price": 300,
+        "description": "Compact microwave oven with quick cooking options."
+      }
+    ]
+  }
+]
