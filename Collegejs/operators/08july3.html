@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        table {
+            display: none;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body onload="loadbody()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h1 id="msg"></h1>
+
+    <script type="text/javascript">
+        function loadbody(){
+            const URL='https://fakestoreapi.com/products';
+            loadProducts(URL);
+        }
+
+        async function loadProducts(URL) {
+            try {
+                let response = await fetch(URL);
+                let products = await response.json();
+
+                if(products.length > 0){
+                    document.querySelector('table').style.display = 'table';
+                }
+
+                for (let product of products) {
+                    if (product.category === 'electronics' || product.category === 'jewelery') {
+                        continue;
+                    }
+
+                    let row = document.createElement('tr');
+                    let cell1 = document.createElement('td');
+                    let cell2 = document.createElement('td');
+                    let cell3 = document.createElement('td');
+                    let cell4 = document.createElement('td');
+
+                    cell1.innerText = product.id;
+                    cell2.innerText = product.title;
+                    cell3.innerText = `$${product.price}`;
+                    cell4.innerText = product.category;
+
+                    row.appendChild(cell1);
+                    row.appendChild(cell2);
+                    row.appendChild(cell3);
+                    row.appendChild(cell4);
+
+                    document.querySelector('tbody').appendChild(row);
+                }
+            } catch (error) {
+                document.getElementById('msg').innerText = "Error loading products";
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
