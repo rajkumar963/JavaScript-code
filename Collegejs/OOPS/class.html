@@ -1,0 +1,36 @@
+class in OOP:- <br>
+1. it is a program template that providea logic and data which can we implement as a requirements.<br>
+2. class have the behaviour of entity when it comperies of business 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class in OOP</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class Student {
+            // name;
+            // age;
+            // email;
+            constructor(name,age,email){
+                 this.name=name;
+                 this.age=age;
+                 this.email=email;
+            }
+ 
+            printData(){
+                console.log(`Name is ${this.name} Age is ${this.age} Email is ${this.email}`)
+            }
+         }
+        let std=new Student("sachin", 52, "sachin@gmail.com");
+        console.log(std)
+        std.printData()
+
+        
+    </script>
+</body>
+</html>
