@@ -1,0 +1,19 @@
+1. how to create main branch through command:--  git checkout -b main
+2. different b/w package.json and package-lock.json
+   
+    Summary of Differences
+    Feature             	   package.json	      package-lock.json
+    Editable by developer	     ✅ Yes	            ❌ No
+    Contains metadata	         ✅ Yes	            ❌ No
+    Contains exact versions	     ❌ No (can use ^/~)	✅ Yes
+    Controls install	         ✅ Yes            	✅ Yes (for locking versions)
+    Tracks sub-dependencies	     ❌ No	            ✅ Yes
+    Should be committed	         ✅ Yes	            ✅ Yes
+
+//diffrence b/w normal dependency  and Dev dependency
+//CDN
+
+//Tilde and caret
+Operator	Range Allowed	                Example Version	    Installs Up To
+  ~	         Patch(major) updates only	                ~1.2.3	            <1.3.0
+  ^	         Minor + patch (major stays same)	^1.2.3	            <2.0.0

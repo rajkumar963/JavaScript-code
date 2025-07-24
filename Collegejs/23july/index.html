@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Types Event</title>
+    <script>
+        function handleKeyDown()
+        {
+            console.log("key is press down")
+        }
+        function handleKeyUp()
+        {
+            console.log("key is press up")
+        }
+        function handleCharacter(e){
+            console.log("some key is press", e )
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="txtusername" onkeydown="handleKeyDown()" onkeyup="handleKeyUp()" onkeypress="handleCharacter()">
+</body>
+</html>
