@@ -14,6 +14,7 @@
 // name[1]="pammi"
 // console.log(name);
 
+
 // let sen=" my name is rajkumar";
 // function print(sentance){
 //     let words = sen.trim().split(" ");
@@ -46,16 +47,16 @@
 
 
 //Function Declaration
-function greet() {
-    console.log("Hello!");
-}
-greet();  // ✅ You can call it even before the definition
+// function greet() {
+//     console.log("Hello!");
+// }
+// greet();  // ✅ You can call it even before the definition
 
 //Function Expression
-const hello = function () {
-    console.log("Hello!");
-};
-hello();
+// const hello = function () {
+//     console.log("Hello!");
+// };
+// hello();
 
 // Feature	           Function Declaration 	Function Expression
 // Hoisted	             ✅ Yes	                   ❌ No
@@ -63,3 +64,37 @@ hello();
 // Can Be Anonymous	    ❌ No	                    ✅ Yes
 // Call Before Defined	✅ Yes	                   ❌ No
 
+
+
+// const name="Rajkumar";
+// console.log(name());
+
+// console.log([]==[]);
+// console.log([]===[]);
+
+// let ab='raj';
+// function fun(){
+//     console.log(ab);
+//     let ab='kumar';
+// }
+
+// fun();
+
+// function normal() {
+//   console.log(arguments); // works
+// }
+
+// const arrow = () => {
+//   console.log(arguments); // ReferenceError
+// };
+
+ac()//hello world
+var ac=function(){
+    console.log("hello");
+}
+
+ac()//hello
+function ac(){
+    console.log("hello world");
+}
+ac()  //hello

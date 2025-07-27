@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "Which property is used in CSS to change the text color of an element?",
+      "answer": [
+        { "text": "font-color", "isCorrect": false },
+        { "text": "color", "isCorrect": true },
+        { "text": "text-color", "isCorrect": false },
+        { "text": "background-color", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "What does CSS stand for?",
+      "answer": [
+        { "text": "Colorful Style Sheets", "isCorrect": false },
+        { "text": "Cascading Style Sheets", "isCorrect": true },
+        { "text": "Creative Style Sheets", "isCorrect": false },
+        { "text": "Computer Style Sheets", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which JavaScript method converts JSON data into a JavaScript object?",
+      "answer": [
+        { "text": "JSON.stringify()", "isCorrect": false },
+        { "text": "JSON.parse()", "isCorrect": true },
+        { "text": "JSON.convert()", "isCorrect": false },
+        { "text": "JSON.toObject()", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "What is the correct way to write a function in JavaScript?",
+      "answer": [
+        { "text": "function myFunction()", "isCorrect": true },
+        { "text": "def myFunction()", "isCorrect": false },
+        { "text": "function:myFunction()", "isCorrect": false },
+        { "text": "func myFunction()", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which company developed the TypeScript programming language?",
+      "answer": [
+        { "text": "Facebook", "isCorrect": false },
+        { "text": "Google", "isCorrect": false },
+        { "text": "Microsoft", "isCorrect": true },
+        { "text": "Amazon", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "How do you write a single-line comment in JavaScript?",
+      "answer": [
+        { "text": "// This is a comment", "isCorrect": true },
+        { "text": "% This is a comment% ", "isCorrect": false },
+        { "text": "# This is a comment", "isCorrect": false },
+        { "text": "** This is a comment **", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a JavaScript data type?",
+      "answer": [
+        { "text": "String", "isCorrect": false },
+        { "text": "Boolean", "isCorrect": false },
+        { "text": "Float", "isCorrect": true },
+        { "text": "Undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which tool can you use to ensure code quality in JavaScript?",
+      "answer": [
+        { "text": "ESLint", "isCorrect": true },
+        { "text": "Node.js", "isCorrect": false },
+        { "text": "MongoDB", "isCorrect": false },
+        { "text": "Docker", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which company developed React.js?",
+      "answer": [
+        { "text": "Apple", "isCorrect": false },
+        { "text": "Microsoft", "isCorrect": false },
+        { "text": "Google", "isCorrect": false },
+        { "text": "Facebook", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "Which method adds one or more elements to the end of an array in JavaScript?",
+      "answer": [
+        { "text": "push()", "isCorrect": true },
+        { "text": "pop()", "isCorrect": false },
+        { "text": "shift()", "isCorrect": false },
+        { "text": "concat()", "isCorrect": false }
+      ]
+    }
+  ]
+}
