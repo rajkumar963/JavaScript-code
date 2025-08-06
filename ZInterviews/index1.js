@@ -1,6 +1,10 @@
-// console.log("hello">9);
-// console.log("hello"<9);
-// console.log("8">5);
+    // console.log("hello">9);// false
+    // console.log("hello"<9);// false
+    // console.log("hello"==9);// false
+    // console.log("8">5);// true
+    // console.log("8"<5);// false
+    // console.log("8"==5);// false
+    // console.log("8"===5);// false
 
 // [y]=[1,2,3,4,5]
 // console.log(y)
@@ -69,8 +73,8 @@
 // const name="Rajkumar";
 // console.log(name());
 
-// console.log([]==[]);
-// console.log([]===[]);
+// console.log([]==[]);// false
+// console.log([]===[]);// false    
 
 // let ab='raj';
 // function fun(){
@@ -88,13 +92,56 @@
 //   console.log(arguments); // ReferenceError
 // };
 
-ac()//hello world
-var ac=function(){
-    console.log("hello");
-}
+// ac()//hello world
+// var ac=function(){
+//     console.log("hello");
+// }
 
-ac()//hello
-function ac(){
-    console.log("hello world");
-}
-ac()  //hello
+// ac()//hello
+// function ac(){
+//     console.log("hello world");
+// }
+// ac()  //hello
+
+
+//how to reverse a string
+// let str="rajkumar is a good boy";
+// let reversed = str.split("").reverse().join("");
+// console.log(reversed);
+
+// let str1="rajkumar is a good boy";
+// let reverse1 = str1.split(" ").reverse().join(" ");
+// console.log(reverse1);
+
+
+// console.log(null==undefined); // true
+// console.log(null===undefined); // false
+
+// const arr = new Array(100);
+// console.log(arr.length); // 100
+
+
+// let arr1=[1,2,3,4,5,6]
+// console.log(arr1.filter((ele)=>ele%2==0))
+// console.log(arr1.find((ele)=>ele%2==0))
+
+// let arr=[1,2,3,4,5]
+// let arr1=[3,4,5,6,7]
+
+// function intersection(arr,arr1){
+//     let arr2=[];
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=0;j<arr1.length;j++){
+//             if(arr[i]==arr1[j]){
+//                 arr2.push(arr[i]);
+//             }
+//         }
+//     }
+//     return arr2;
+// }
+// console.log(intersection(arr,arr1));
+
+
+console.log("2"-"2");// 0
+console.log("2"-2);// 0
+console.log(2-"2");// 0

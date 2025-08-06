@@ -42,3 +42,63 @@
 14. It allows JavaScript to perform non-blocking operations (like setTimeout, fetch, promises, etc.) by offloading them to the browser and handling their callbacks later, without stopping the execution of other code.
 
 
+15. HOF:--->Takes one or more functions as arguments. Returns a function as its result.
+
+16. map():-->Transforms each element of an array and returns a new array. Original array is not modified.  
+                    const numbers = [1, 2, 3, 4];
+                    const doubled = numbers.map(num => num * 2);
+                    console.log(doubled); // [2, 4, 6, 8]
+   
+    filter():-->Filters elements based on a condition and returns a new array.
+                    const numbers = [1, 2, 3, 4, 5];
+                    const even = numbers.filter(num => num % 2 === 0);
+                    console.log(even); // [2, 4]
+          
+    reduce():--->Reduces the array to a single value (like sum, product, object, etc.).
+                      const numbers = [1, 2, 3, 4];
+                      const total = numbers.reduce((accumulator, current) => accumulator + current, 0);
+                      console.log(total); // 10
+
+
+17. Event loop:-- it is like a managers to manage the code;
+
+18. function expression and function declaration
+
+20. 📦 export vs default export   
+          Feature	                   export (Named Export)	                export default
+          Export count	              Can export multiple per file	        Only one default export per file
+          Import syntax             	import { name } from './file.js'	    import anyName from './file.js'
+          Import name	                Must match exported name	            Can be any name
+          Use case	                  Reusable utilities/constants	        Primary value (e.g., main class/function/component)
+          Combining with others	      Can use with default in same file   	Only one default per module
+
+21. Difference Between sessionStorage and localStorage
+
+22. slice and splice Method
+
+23. 🆚 Debouncing vs Throttling
+
+24. An infinite curry in JavaScript typically refers to a function that can be called repeatedly with arguments in a chain-like fashion, and optionally ends when called without arguments (or with a specific signal), producing a final result.
+
+25. destructuring in js:-Destructuring is a feature in ES6 that allows you to unpack values from arrays or properties from objects into distinct variables.
+     ex:--- const numbers = [10, 20, 30];
+            const [a, b, c] = numbers;
+            console.log(a); // 10
+            console.log(b); // 20
+            console.log(c); // 30
+
+26. how to merge two arr.   
+           1. Using the Spread Operator (...) – ES6+
+                const arr1 = [1, 2, 3];
+                const arr2 = [4, 5, 6];
+
+                const merged = [...arr1, ...arr2];
+                console.log(merged); // [1, 2, 3, 4, 5, 6]
+                    
+            2. Using concat() Method 
+                const merged = arr1.concat(arr2);
+                console.log(merged); // [1, 2, 3, 4,5,6]
+
+            3. Using push() with Spread (to mutate one array)
+                    arr1.push(...arr2);
+                    console.log(arr1); // [1, 2, 3, 4,5,6]
