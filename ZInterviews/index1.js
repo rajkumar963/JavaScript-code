@@ -142,6 +142,54 @@
 // console.log(intersection(arr,arr1));
 
 
-console.log("2"-"2");// 0
-console.log("2"-2);// 0
-console.log(2-"2");// 0
+// console.log("2"-"2");// 0
+// console.log("2"-2);// 0
+// console.log(2-"2");// 0
+
+
+// str1="Raj"
+// str2="Developer"
+// str=""
+
+// for(let i=0;i<str1.length;i++){
+//     str=str+str1[i]+str2[i]
+// }
+// console.log(str);
+
+// let n=str1.length,m=str2.length;
+// let i=0,j=0;
+// while(i<n && j<m){
+//     str=str+str1[i];
+//     str=str+str2[j];
+//     i++;
+//     j++;
+// }
+// if(i==n){
+//     while(j<m){
+//         str=str+str2[j];
+//         j++;
+//     }
+// }
+// if(j==m){
+//     while(i<n){
+//         str=str+str1[i];
+//         i++;
+//     }
+// }
+// console.log(str);
+
+// const arr=[1,2,3,4,5,6].map((ele)=>ele=2);
+// console.log(arr);
+
+// const arr1=[1,2,3,4,5,6].map((ele)=>ele>8);
+// console.log(arr1);
+
+//impure function
+// let n=0;
+//     function a(){
+//         n++;
+//         return n;
+//     }
+//     console.log(a());
+//     console.log(a());
+    

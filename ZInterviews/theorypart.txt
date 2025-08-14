@@ -102,3 +102,9 @@
             3. Using push() with Spread (to mutate one array)
                     arr1.push(...arr2);
                     console.log(arr1); // [1, 2, 3, 4,5,6]
+
+27. An anonymous function in JavaScript is simply a function without a name.
+            let greet = function() {
+              console.log("Hello!");
+            };
+            greet(); // Hello!
